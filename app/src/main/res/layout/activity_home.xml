@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="@color/dark"
+    >
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/dark"
+        app:tabTextColor="@color/beige"
+        >
+
+    </com.google.android.material.tabs.TabLayout>
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/viewPager2"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        >
+
+    </androidx.viewpager2.widget.ViewPager2>
+
+    <TextView
+        android:textAlignment="center"
+        android:paddingHorizontal="40dp"
+        android:id="@+id/tv_username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Username"
+        android:textSize="24dp"
+        android:textColor="@color/beige"
+        />
+    <TextView
+        android:paddingHorizontal="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add New Food!"
+        android:textAlignment="center"
+        android:textSize="24dp"
+        android:textStyle="bold"
+        android:textColor="@color/beige"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="12dp"
+        >
+
+        <EditText
+            android:id="@+id/et_foodName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nama Makanan"
+            android:textColorHint="@color/beige"
+            android:backgroundTint="@color/beige"
+            android:textAlignment="center"
+            />
+        <EditText
+            android:id="@+id/et_foodDesc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Deskripsi Makanan"
+            android:textColorHint="@color/beige"
+            android:backgroundTint="@color/beige"
+            android:textAlignment="center"/>
+        <EditText
+            android:id="@+id/et_foodPrice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Harga Makanan"
+            android:textColorHint="@color/beige"
+            android:backgroundTint="@color/beige"
+            android:textAlignment="center"/>
+        <Button
+            android:id="@+id/btn_add"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Add Food"
+            android:textColor="@color/dark"
+            android:backgroundTint="@color/teal"
+            />
+
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="40dp"
+    android:background="@color/dark"
+    >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Welcome!"
+        android:textSize="48dp"
+        android:textStyle="bold"
+        android:textColor="@color/beige"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Please Login to Continue!"
+        android:textSize="24dp"
+        android:textColor="@color/beige"
+        />
+    <EditText
+        android:id="@+id/et_usernameLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Username"
+        android:textColorHint="@color/beige"
+        android:backgroundTint="@color/beige"
+        android:layout_marginTop="24dp"
+        />
+    <EditText
+        android:id="@+id/et_passwordLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColorHint="@color/beige"
+        android:backgroundTint="@color/beige"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:layout_marginTop="24dp"
+        />
+    <TextView
+        android:id="@+id/tv_registerLink"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Don't have an Account? Register Here!"
+        android:textSize="12dp"
+        android:textColor="@color/beige"
+        android:layout_marginTop="24dp"
+        />
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="@color/teal"
+        android:textColor="@color/dark"
+        />
+
+</LinearLayout>
